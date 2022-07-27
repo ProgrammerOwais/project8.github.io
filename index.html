@@ -8,6 +8,40 @@
     <title>project</title>
   </head>
   <body>
-    hello world
+    <div class="container container1">
+      <div class="sub-container">
+        <div class="logo-div">
+          <img src="./images/logo.png" class="logo" alt="img" />
+        </div>
+        <div class="form-div">
+          <label class="label" for="number">Enter your mobile number</label>
+          <div class="input-div">
+            <div class="code">+63</div>
+            <input
+              type="phone"
+              id="number"
+              class="form-input"
+              onchange="rangeInput()"
+              required
+            />
+          </div>
+        </div>
+        <h4 class="heading">Available for all networks</h4>
+        <p class="para main-para">
+          By Tapping next, we will collect your mobile number's network
+          information to be able to send you a One-Time Password (OTP).
+        </p>
+        <button class="next">NEXT</button>
+        <div class="contact-info">
+          <div class="copy">
+            <span>© </span>2020 GCash.com| All rights reserved
+          </div>
+          <div class="link">
+            <a href="#">Privacy Policy | Terms and conditions</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
   </body>
 </html>
