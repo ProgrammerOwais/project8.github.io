@@ -16,14 +16,14 @@
         <div class="form-div">
           <label class="label" for="number">Enter your mobile number</label>
           <div class="input-div">
-            <div class="code">+63</div>
+            <div class="codeLable">+63</div>
             <input
-              type="text"
-              oninput="inputRange()"
+              type="tel"
+              pattern="[0-9]{3}"
+              aria-label="3-digit area code"
               id="number"
               class="form-input"
-              size="13"
-              maxlength="13"
+              maxlength="9"
               required
             />
           </div>
@@ -50,7 +50,7 @@
           <img src="./images/logo.png" class="logo logo2" alt="img" />
         </div>
         <div class="number-info">
-          <div class="number">03404021737</div>
+          <div class="number"></div>
           <div class="change-number"><a href="#">Change Number</a></div>
         </div>
         <div class="mpin-sec">
@@ -95,12 +95,23 @@
             We have sent a 6-digit authentication code to your registered mobile
             number
           </p>
-          <p class="para page3-para2">+6434u390534</p>
+          <p class="para page3-para2"></p>
           <p class="para page3-para3">Please enter the authentication code</p>
         </div>
         <div class="auth-code-div">
           <div class="code">
             <input
+              id="code1"
+              type="text"
+              size="1"
+              maxlength="1"
+              class="auth-code"
+              oninput="focusChange1()"
+              placeholder="__"
+            />
+            <input
+              id="code2"
+              oninput="focusChange2()"
               type="text"
               size="1"
               maxlength="1"
@@ -108,6 +119,8 @@
               placeholder="__"
             />
             <input
+              id="code3"
+              oninput="focusChange3()"
               type="text"
               size="1"
               maxlength="1"
@@ -115,6 +128,8 @@
               placeholder="__"
             />
             <input
+              id="code4"
+              oninput="focusChange4()"
               type="text"
               size="1"
               maxlength="1"
@@ -122,6 +137,8 @@
               placeholder="__"
             />
             <input
+              id="code5"
+              oninput="focusChange5()"
               type="text"
               size="1"
               maxlength="1"
@@ -129,13 +146,7 @@
               placeholder="__"
             />
             <input
-              type="text"
-              size="1"
-              maxlength="1"
-              class="auth-code"
-              placeholder="__"
-            />
-            <input
+              id="code6"
               type="text"
               size="1"
               maxlength="1"
