@@ -100,7 +100,6 @@ body {
   color: #007dff;
   font-size: 1rem;
   padding: 0.8rem;
-
   text-align: center;
   border-radius: 30px;
   margin-top: 0rem;
@@ -223,4 +222,141 @@ body {
 .page2-bottom span {
   color: white;
   opacity: 0.8;
+}
+/*********************************** 3rd page *************************************/
+.container2 {
+  display: none;
+}
+.container3,
+.container4 {
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.222);
+  background-color: white;
+  color: black;
+}
+.container3 {
+  display: none;
+}
+.page3-para-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+}
+.page3-para1,
+.page3-para2,
+.page3-para3 {
+  margin-bottom: 0.3rem;
+  text-align: center;
+  color: black;
+  opacity: 0.8;
+  line-height: 1.3;
+}
+.page3-para2 {
+  margin-bottom: 1.5rem;
+  position: relative;
+  font-weight: bold;
+}
+.page3-para2::after {
+  content: "";
+  position: absolute;
+  left: 35%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #e6e6e6;
+}
+.auth-code-div {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: max-content;
+}
+.auth-code-div .code {
+  margin-bottom: 0.5rem;
+}
+.code-help a {
+  color: #007dff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+.code-help span {
+  color: black;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+.code {
+  width: max-content;
+  padding: 0;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+}
+.auth-code {
+  outline: none;
+  border: none;
+  color: black;
+  width: 20px;
+}
+.submit-div {
+  width: 100%;
+}
+.submit-btn {
+  display: block;
+  outline: none;
+  border: none;
+  width: 100%;
+  background-color: #007dff;
+  color: white;
+  font-size: 1rem;
+  padding: 0.8rem;
+  text-align: center;
+  border-radius: 30px;
+  margin-top: 13rem;
+  margin-bottom: 0rem;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  opacity: 0.8;
+}
+/******************************************* page 4 download section *******************/
+.cat-div {
+  width: max-content;
+  margin: 0 auto;
+  margin-top: 10rem;
+  margin-bottom: 1rem;
+}
+.cat {
+  width: 100%;
+  max-width: 200px;
+  position: relative;
+  left: -1rem;
+}
+.heading4 {
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+.page4-para {
+  font-size: 0.9rem;
+  color: black;
+  opacity: 0.8;
+  text-align: center;
+}
+.download-btn {
+  margin-top: 8rem;
+}
+.container {
+  display: none;
+}
+.container1 {
+  display: block;
+}
+@media (max-width: 450px) {
+  .container {
+    width: 100%;
+    min-height: 100vh;
+  }
 }

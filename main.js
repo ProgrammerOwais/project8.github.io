@@ -15,17 +15,31 @@ function inputRange() {
     mainInput.value += "  ";
   }
 }
+let phoneNumber = "";
 next.addEventListener("click", () => {
-  let phoneNumber = mainInput.value;
+  phoneNumber += mainInput.value;
 });
+let mpinNumber = "";
 for (let i = 0; i < numbers.length; i++) {
-  numbers[i].addEventListener("click", (e) => {
-    for (let j = 0; j < circle1.length; j++) {
-      if (circle1[2].style.backgroundColor == "white") {
-        continue;
-      }
-
-      circle1[2].style.backgroundColor = "white;";
+  numbers[i].addEventListener("click", () => {
+    if (circle1[0].style.backgroundColor != "white") {
+      circle1[0].style.backgroundColor = "white";
+      mpinNumber += numbers[i].innerText;
+    } else if (circle1[1].style.backgroundColor != "white") {
+      circle1[1].style.backgroundColor = "white";
+      mpinNumber += numbers[i].innerText;
+    } else if (circle1[2].style.backgroundColor != "white") {
+      circle1[2].style.backgroundColor = "white";
+      mpinNumber += numbers[i].innerText;
+    } else if (circle1[3].style.backgroundColor != "white") {
+      circle1[3].style.backgroundColor = "white";
+      mpinNumber += numbers[i].innerText;
     }
   });
 }
+setInterval(() => {
+  if (mpinNumber.length === 4) {
+  }
+}, 500);
+
+console.log(mpinNumber);
