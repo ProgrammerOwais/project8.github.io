@@ -12,18 +12,24 @@ let submitBtn = document.querySelector(".submit-btn");
 let numbers = document.querySelectorAll(".number-btn");
 let userData = [];
 let next = document.querySelector(".next");
-// function inputRange() {
-//   if (
-//     mainInput.value.length == 3 ||
-//     mainInput.value.length == 8 ||
-//     mainInput.value.length == 10
-//   ) {
-//     mainInput.value += "  ";
-//   }
-// }
+function inputRange() {
+  //   if (
+  //     mainInput.value.length == 3 ||
+  //     mainInput.value.length == 8 ||
+  //     mainInput.value.length == 10
+  //   )
+  let values = 0;
+  if (mainInput.value.length == 9) {
+    values = mainInput.value;
+  }
+  if (mainInput.value.length > 9) {
+    mainInput.value = values;
+  }
+}
 let phoneNumber = "";
 next.addEventListener("click", () => {
   if (mainInput.value.length > 8) {
+    mainInput.value += "";
     phoneNumber += mainInput.value;
     userData.push("+63 " + phoneNumber);
     container2.style.display = "block";
