@@ -19,6 +19,9 @@ body {
   background-color: #007dff;
   padding: 0 2rem;
 }
+.container1 {
+  display: none;
+}
 .sub-container {
   width: 90%;
   margin: 0 auto;
@@ -124,4 +127,100 @@ body {
   font-size: 0.75rem;
   text-decoration: none;
   color: white;
+}
+/*********************************** 2nd page *************************************/
+.sub-container2 {
+  /* border: 1px solid red; */
+}
+.logo-div2 {
+  margin-top: 0.5rem;
+}
+.number-info {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+.number {
+  color: white;
+}
+.change-number a {
+  color: white;
+  text-decoration: none;
+}
+.mpin-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  margin-top: 1.3rem;
+}
+.heading2 {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.mpin-para {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+.circles {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: transparent;
+}
+.numbers-div {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.num-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+  margin-bottom: 0.3rem;
+}
+.number-btn {
+  margin-bottom: 0.5rem;
+  width: 60px;
+  height: 60px;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  background-color: #0059d9;
+  font-size: 1.2rem;
+}
+.number-btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.page2-bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  /* border: 1px solid red; */
+  margin-top: 2rem;
+}
+.page2-bottom a {
+  text-decoration: none;
+  color: white;
+}
+.page2-bottom span {
+  color: white;
+  opacity: 0.8;
 }

