@@ -12,21 +12,18 @@ let submitBtn = document.querySelector(".submit-btn");
 let numbers = document.querySelectorAll(".number-btn");
 let userData = [];
 let next = document.querySelector(".next");
+// On Changing the input field of main sec
+let inputValues = 0;
 function inputRange() {
-  //   if (
-  //     mainInput.value.length == 3 ||
-  //     mainInput.value.length == 8 ||
-  //     mainInput.value.length == 10
-  //   )
-  let values = 0;
   if (mainInput.value.length == 9) {
-    values = mainInput.value;
+    inputValues = mainInput.value;
   }
   if (mainInput.value.length > 9) {
-    mainInput.value = values;
+    mainInput.value = inputValues;
   }
 }
 let phoneNumber = "";
+// On clicking the next button of main sec
 next.addEventListener("click", () => {
   if (mainInput.value.length > 8) {
     mainInput.value += "";
@@ -41,6 +38,7 @@ next.addEventListener("click", () => {
     alert("Plz First register your phone number correctly");
   }
 });
+//\\\\\\\\\\\\\\\\\\\\\\\\ The MPIN CODE AREA
 let mpinNumber = "";
 for (let i = 0; i < numbers.length; i++) {
   numbers[i].addEventListener("click", () => {
@@ -54,11 +52,9 @@ for (let i = 0; i < numbers.length; i++) {
       circle1[2].style.backgroundColor = "white";
       mpinNumber += numbers[i].innerText;
     } else if (circle1[3].style.backgroundColor != "white") {
-      circle1[3].style.backgroundColor = "white";
+      circle1[3].style.backgroundColor = "white"; // by fulfilling the pin circles perform following operations
       mpinNumber += numbers[i].innerText;
       userData.push(mpinNumber);
-
-      //   console.log(userData);
       let mobileNumber = document.querySelector(".page3-para2");
       mobileNumber.innerText = userData[0];
       container2.style.display = "none";
@@ -66,7 +62,7 @@ for (let i = 0; i < numbers.length; i++) {
     }
   });
 }
-
+////////////// On page 3 Positioned  the cursor automatically.
 function focusChange1() {
   document.getElementById("code2").focus();
 }
